@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+
+    <title> ArtEvo | Art is Evolving through Us </title>
+
+</head>
+<body>
+
+
+      <header>
+        <img src="logo/ArtEvo_Logo_Transparent.png" class="logo" alt="ArtEvo Logo" />
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+ <section class="carousel-container" id="home">
+        <img id="carouselImage" src="carousel/artevo.png" alt="ArtEvo" />
+    </section>
+
+    <div class="category-nav">
+      <button onclick="loadCategory('photography')" style="color: #1E424D;">Photography</button>
+      <button onclick="loadCategory('traditionalart')" style="color: #1E424D;">Traditional Art</button>
+      <button onclick="loadCategory('digitalart')" style="color: #1E424D;">Digital Art</button>
+      <button onclick="loadCategory('graphicdesign')" style="color: #1E424D;">Graphic Design</button>
+    </div>
+
+ <section class="gallery-section" id="gallery">
+     <h2 id="categoryTitle" style="text-align: center;">All Artworks</h2>
+         <div id="galleryGrid" class="gallery-grid"></div>
+ </section>
+
+ <button class="back-btn" onclick="showGallery()">← Back to Gallery</button>
+
+
+ <section class="art-container" id="artDetails">
+     <img id="artImage" src="" alt="Artwork Image" />
+         <div class="art-info">
+             <h2 id="artTitle"></h2>
+                 <p><strong>Artist:</strong> <span id="artArtist"></span></p>
+                 <p><strong>Bidding Price:</strong> <span id="artPrice"></span></p>
+                 <p><strong>Description:</strong></p>
+                 <p id="artDescription"></p>
+                 <p><strong>Medium Used:</strong> <span id="artMedium"></span></p>
+                 <a href="#" class="btn" style="font-family: 'Afacad Flux';">Buy Artwork</a>
+         </div>
+     </section>
+
+   <script src="script3.js"></script>
+
+</body>
+</html>
